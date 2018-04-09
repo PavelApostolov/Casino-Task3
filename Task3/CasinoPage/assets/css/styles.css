@@ -1,0 +1,446 @@
+/* HEADER START */
+
+header {
+    height: 800px;
+    background-image: url("../images/background.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+
+nav {
+    height: 42px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin: 0 0 0 20px;
+    float: left;
+}
+.logo img {
+    max-height: 40px;
+}
+
+.menu {
+    float: right;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    height: 42px;
+    margin-top: 0px;
+    padding-left: 0;
+}
+
+ul li {
+    float: left;
+    color: white;
+    margin: 0 10px;
+    font-size: 0.9em;
+    padding-top: 4px;
+}
+
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+ul>:first-child {
+    margin-left: 0px !important;
+}
+
+ul li a:hover {
+    cursor: pointer;
+}
+.flag{
+    float: left;
+    padding-right: 10px;
+}
+.login{
+    background: #f89321;
+    color: black;
+    padding: 6px 20px;
+    margin-right: 0px;
+}
+.login span{
+    font-size: 1.2em;
+}
+.login img{
+    vertical-align: middle;
+}
+.login:hover, .logout:hover{
+    cursor: pointer;
+}
+.logout{
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 0px;
+    font-size: 1.2em;
+}
+.promo {
+    float: left;
+    width: 640px;
+    font-family: "Open Sans";
+    font-size: 3.4em;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-shadow: 0px 0 black, 0 0px silver, 1px 0 black, 0 0px black;
+}
+.exclusive{
+    width: 60%;
+    margin: auto;
+    font-size: 0.5em;
+    background: rgba(0, 0, 0, 0.45);
+}
+.promo span{
+    display: inline-block;
+    font-size: 0.5em;
+    line-height: 0.9em;
+    margin: 0 0.5em;
+}
+.promo-text1{
+    font-size: 0.8em;
+}
+.promo-text2{
+    font-size: 1.3em;
+}
+header {
+    position: relative
+}
+#registration_form, #step3_form{
+    float: right;
+    max-width: 360px;
+    margin-right: 10%;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+}
+.sign-up{
+    color: orange;
+    font-size: 2.6em;
+    padding: 16px;
+    margin: 0;
+    text-align: left;
+}
+.additional{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0 16px 20px 16px;
+    text-align: left;
+}
+.terms{
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    color: white;
+    text-decoration: underline;
+}
+/* HEADER END */
+
+/* GAMES START */
+.games{
+    margin: 16px 0px;
+    text-align: center;
+}
+
+.game-container, .game-container2{
+    display: inline-block;
+    position: relative;
+    max-width: 200px;
+    margin: 0 8px;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.8);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .3s ease;
+  }
+  
+.game-container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+.text {
+    display: inline-block;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.play-btn{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #f79720;
+    color: #fff;
+    font: 400 14px/36px Gotham-book,sans-serif;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #f79720;
+    background: -moz-linear-gradient(top,#f79720 0,#dd7e29 100%);
+    background: -webkit-linear-gradient(top,#f79720 0,#dd7e29 100%);
+    background: linear-gradient(to bottom,#f79720 0,#dd7e29 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.play-btn:hover{
+    cursor: pointer;
+}
+/* GAMES END*/
+
+
+/* START OF FORM */
+
+input, select {
+    width: 90%;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#agree-terms, #agreement{
+    display: inline-block;
+    width: 20px;
+    margin: 4px;
+}
+.checkbox{
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 10px;
+}
+#form_email{
+    background: url(../images/email.png) no-repeat scroll 7px 7px ;
+    background-color: #eeeeec;
+    padding-left:30px;
+}
+#form_username{
+    background: url(../images/username.png) no-repeat scroll 7px 7px ;
+    background-color: #eeeeec;
+    padding-left:30px;
+}
+#form_password{
+    background: url(../images/password.png) no-repeat scroll 7px 7px ;
+    background-color: #eeeeec;
+    padding-left:30px;
+}
+#form_confirm_pass{
+    background: url(../images/confirm-pass.png) no-repeat scroll 7px 7px ;
+    background-color: #eeeeec;
+    padding-left:30px;
+}
+.btn {
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    color: #E0F7FA;
+    background: #6eba1c;
+    box-shadow: inset 0 1px #B2EBF2, 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.btn-disabled{
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    color: black;
+    background: lightgray;
+    box-shadow: inset 0 1px #B2EBF2, 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.btn:hover, .skip:hover, .promotions:hover {
+    border-color: #26C6DA;
+    background: linear-gradient(to bottom, #80DEEA 0%, #4DD0E1 100%);
+    box-shadow: inset 0 1px #E0F7FA, 0 2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+/* END OF FORM */
+
+/* START STEP2 */
+
+.step2, .step4{
+    float: right;
+    max-width: 320px;
+    margin-right: 10%;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 10px;
+}
+.ready{
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.skip{
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    color: #E0F7FA;
+    background: red;
+    box-shadow: inset 0 1px #B2EBF2, 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.promotions{
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    color: #E0F7FA;
+    background: orange;
+    box-shadow: inset 0 1px #B2EBF2, 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bonus{
+    margin-bottom: 10px;
+}
+/* END STEP2 */
+
+/* FOOTER */
+footer{
+    background: #d2d2d2;
+    text-align: center;
+    font-size: 0.8em;
+    color: #90908e;
+}
+.disclaimer{
+    width: 50%;
+    margin: auto;
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+}
+.footer-images{
+    padding: 10px 0;
+}
+
+.error_form {
+    color: red;
+    display: block;
+}
+.menu-mobile{
+    display: none;
+}
+/* FOOTER END */
+
+@media screen and (max-width: 1120px) {
+    main, footer {
+        padding: 0 20px;
+    }
+    .promo{
+        width: 49%;
+        font-size: 2.4em;
+    }
+    .exclusive{
+        display: none;
+    }
+    #registration_form, #step3_form{
+        width: 40%;
+        margin-right: 3%;
+    }
+    .login span{
+        display: none;
+    }
+    .logo{
+        margin-top: 5px;
+    }
+    .logo img {
+        max-height: 30px;
+    }
+    .game-container2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .promo{
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #registration_form, #step3_form{
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+    .flag, .secure{
+        display: none;
+    }
+    .exclusive{
+        display: block;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .disclaimer{
+        width: 90%;
+    }
+    .game-container {
+        max-width: 50%;
+    }
+    .game-container img{
+        width: 80%;
+    }
+    .overlay .text{
+        font-size: 0.8em;
+    }
+    .menu-mobile{
+        display: block;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        margin-bottom: 10px;
+    }
+    .flag2{
+        vertical-align: middle;
+        float: left;
+
+    }
+    .flag2 a{
+        font-size: 0.7em;
+        text-decoration: none;
+        color: white;
+        float: left;
+        margin-top: 5px;
+    }
+    .secure2{
+        display: inline-block;
+    }
+}
+
+

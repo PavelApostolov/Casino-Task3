@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
+  <title>The Flintstones</title>
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/validate.js"></script>
+  <script src="./assets/js/toggle.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+          <img src="./assets/images/casino-logo.png" alt=""/>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="flag"><img class="flag" src="./assets/images/british-flag.png" alt="" /><a href="javascript:void(0)">GAMBLING <br> COMISSION</a></li>
+          <li class="secure"><img src="./assets/images/secure-data.png" alt=""/></li>
+          <li class="login"><img src="./assets/images/login.png" alt=""> <span>Login</span></li>
+          <li class="logout" style="display:none">Logout</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="promo">
+      <div class="exclusive">Exclusive offer from: Pavel</div>
+      <div class="promo-text1">Get Your</div>
+      <div class="promo-text2">100%<span>up<br>to</span>&#163;400</div>
+      <div class="promo-text3">+200 Free Spins</div>
+    </div>
+
+
+      <form id="registration_form" method="post" style="display:none">
+          <p class="sign-up">Sign up</p>
+          <p class="additional">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae viverra mauris.</p>
+        <div class="email">
+            <span class="error_form" id="email_error_message"></span>
+            <input id="form_email" type="text" placeholder="Email">
+        </div>
+        <div class="username">
+            <span class="error_form" id="username_error_message"></span>
+            <input id="form_username" type="text" placeholder="Username">
+        </div>
+        <div class="password">
+            <span class="error_form" id="password_error_message"></span>
+            <input id="form_password" type="password" placeholder="Password">
+        </div>
+        <div class="confirm_password">
+            <span class="error_form" id="confirm_password_error_message"></span>
+            <input id="form_confirm_pass" type="password" placeholder="Confirm password">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="agree-terms" name="agreement">
+            <label for="agree-terms">By checking this box, I agree to Terms &amp; Conditions of the site.</label>
+        </div> 
+          <button disabled="disabled" class="btn-disabled" id="join">Join Now</button>
+      </form>
+
+
+    <div class="step2" style="display:none">
+      <div class="ready">
+        You are ready to play! In order to play with real money, you will need to provide more information. You can do so now, if you wish, or skip and do it at a later time.
+      </div>
+      <button class="btn" id="continue">Continue registration</button>
+      <button class="skip" onclick="window.location='http://www.casino.com/'">Skip</button>
+    </div>
+
+    <form id="step3_form" method="post" style="display: none">
+      <p class="sign-up">Continue registration</p>
+      <p class="additional">Please, fill in the form below to finish your registration!</p>
+      <div class="address1">
+          <input id="form_address1" type="text" placeholder="Address 1">
+      </div>
+      <div class="address2">
+          <input id="form_address2" type="text" placeholder="Address 2">
+      </div>
+      <div class="city">
+          <input id="form_city" type="text" placeholder="City">
+      </div>
+      <div class="country">
+          <input id="form_country" type="text" placeholder="Country">
+      </div>
+      <div class="phone-number">
+          <input id="form_phone_number" type="text" placeholder="Phone number">
+      </div>
+      <div class="bonus">
+          <a id="claim-code" href="#">Do you have a bonus code? Click here!</a>
+          <input style="display:none" id="form_bonus_code" type="text" placeholder="Bonus code">
+      </div>
+      <div class="checkbox">
+          <input type="checkbox" id="agreement" name="agree">
+          <label for="agreement">By checking this box, I agree to Terms &amp; Conditions of the site.</label>
+      </div> 
+        <button disabled="disabled" class="btn-disabled" id="finish">Finish</button>
+    </form>
+
+    <div class="step4" style="display:none">
+        <div class="ready">
+            Thank you! You can now play with real money. Have fun, and good luck!        
+        </div>
+        <button class="btn" onclick="window.location='http://www.casino.com/casino-games'">Play now</button>
+        <button class="promotions" onclick="window.location='http://www.casino.com/promotions'">Promotions</button>
+      </div>
+
+    <span class="terms"><a>Terms & Conditions apply</a></span>
+  </header>
+
+    <section class="games">
+        <div class="menu-mobile">
+              <div class="flag2"><img class="flag2" src="./assets/images/british-flag.png" alt="" /><a href="javascript:void(0)">GAMBLING <br> COMISSION</a></div>
+              <div class="secure2"><img src="./assets/images/secure-data.png" alt=""/></div>
+          </div>
+      <div class="game-container">
+        <img src="./assets/images/batbeg.jpg" alt="" />
+        <div class="overlay">
+            <div class="text">Batman begins</div>
+            <div class="play-btn">Play for real</div>
+        </div>
+      </div>
+      <div class="game-container">
+          <img src="./assets/images/supman.jpg" alt="" />
+          <div class="overlay">
+              <div class="text">Superman</div>
+              <div class="play-btn">Play for real</div>
+          </div>
+      </div>
+      <div class="game-container">
+          <img src="./assets/images/hrcls.jpg" alt="" />
+          <div class="overlay">
+              <div class="text">Prince of Olympus</div>
+              <div class="play-btn">Play for real</div>
+          </div>
+      </div>
+      <div class="game-container">
+          <img src="./assets/images/aogro.jpg" alt="" />
+          <div class="overlay">
+              <div class="text">Age of Gods Roulette</div>
+              <div class="play-btn">Play for real</div>
+          </div>
+      </div>
+      <div class="game-container2">
+          <img src="./assets/images/zeus.jpg" alt="" />
+          <div class="overlay">
+              <div class="text">King of Olympus</div>
+              <div class="play-btn">Play for real</div>
+          </div>
+      </div>
+      <div class="game-container2">
+          <img src="./assets/images/ashtmd.jpg" alt="" />
+          <div class="overlay">
+              <div class="text">Time for a deal</div>
+              <div class="play-btn">Play for real</div>
+          </div>
+      </div> 
+    </section>
+    
+  <footer>
+    <div class="footer-images">
+      <img src="./assets/images/gamble-aware-logo.png" alt=""/>
+      <img src="./assets/images/18+.png" alt=""/>
+      <img src="./assets/images/thawte.png" alt=""/>
+      <img src="./assets/images/gambling-therapy.png" alt=""/>
+      <img src="./assets/images/gbga.png" alt=""/>
+      <img src="./assets/images/gibraltar.png" alt=""/>
+      <img src="./assets/images/ibas_logo.png" alt=""/>
+      <img src="./assets/images/gamcare.png" alt=""/>
+      <img src="./assets/images/Gambling-Commission.png" alt=""/>      
+    </div>
+    <div class="disclaimer">
+      <p>Casino.com is licensed and regulated to offer online casino gaming services under the jurisdiction of Gibraltar. ©2018 Casino.com is an internationally registered trademark. Casino.com is operated by ONISAC Ltd of Suite 901 Europort, Gibraltar under a license issued by the Gibraltar Licensing Authority, RGL No.053 and regulated by the Gibraltar Gambling Commissioner. For players located in Great Britain only, Casino.com is operated by Mansion Europe Holdings Ltd under a United Kingdom Gambling Commission Remote Operating Licence, Number 000-039448-R-319446-002. Only players above the age of 18 are permitted to play our games. www.gambleaware.co.uk</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+I couldn't find the exact same images provided in the screenshots from the doc file but I've used images that are as close enough as possible.
+
+The design is responsive. I've commented out the viewport meta tag as stated in the guidelines (thus in Mozilla everything is ok but in my Chrome dev tools the responisve layout is not all right).
+
+Until checking the checkbox the form buttons are disabled. Password and confirm password inputs should match to pass the validation. The errors are displayed with error messages.
+
+There is a logout button so that the logged in user won't have the option to see the registration form again.
+
+I've applied an overlay on hover on the game images.
+
+In the last screenshot in the doc file (for mobile phones resolutions) there are 2 forms. This is strange so I've used just one in my html :)
